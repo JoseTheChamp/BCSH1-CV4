@@ -53,7 +53,7 @@ public class Stats
         else { 
             _missed++;
         }
-        _accuracy = (_correct / (_correct + _missed))*100;
+        _accuracy = (int)Math.Round(((double)_correct / ((double)_missed + (double)_correct))*100);        //((_correct / (_correct + _missed))*100);
         UpdatedStats.Invoke(this,new UpdatedStatsEventArgs(_correct,_missed,_accuracy));
     }
 

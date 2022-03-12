@@ -90,7 +90,7 @@ namespace Game
             // toolStripStatusLabel4
             // 
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(583, 20);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(622, 20);
             this.toolStripStatusLabel4.Spring = true;
             this.toolStripStatusLabel4.Text = "Difficulty:";
             this.toolStripStatusLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,6 +138,9 @@ namespace Game
 
         private Random random;
         private Stats stats;
+        private int difficultyMax = 654;
+        private int interval = 800;
+        private bool timerRunning= true;
 
 
 
